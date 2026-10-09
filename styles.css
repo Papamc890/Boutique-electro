@@ -1,0 +1,392 @@
+
+/* ===== STYLES GÉNÉRAUX ===== */
+
+:root {
+    --bleu: #101b32;
+    --orange: #ff8c32;
+    --blanc: #ffffff;
+    --gris: #64748b;
+    --fond: #f5f7fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--bleu);
+    background-color: var(--blanc);
+}
+
+section {
+    padding: 90px 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* ===== NAVIGATION ===== */
+
+.navbar {
+    background-color: var(--bleu);
+    padding: 18px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-brand i {
+    color: var(--orange);
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--orange);
+}
+
+/* ===== SECTION ACCUEIL ===== */
+
+.hero {
+    background: linear-gradient(135deg, #101b32, #253d65);
+    color: var(--blanc);
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: rgba(255, 140, 50, 0.15);
+    color: #ffb16f;
+    padding: 9px 18px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--orange);
+}
+
+.hero p {
+    color: #d6dce7;
+    font-size: 17px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== BOUTONS ===== */
+
+.btn-orange {
+    background-color: var(--orange);
+    color: var(--bleu);
+    font-weight: 700;
+    padding: 14px 25px;
+    border-radius: 9px;
+    border: 2px solid var(--orange);
+    transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: transparent;
+    color: var(--orange);
+    border-color: var(--orange);
+    transform: translateY(-3px);
+}
+
+/* ===== SECTION PRODUITS ===== */
+
+.produits-section {
+    background-color: var(--fond);
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.petit-titre {
+    display: inline-block;
+    color: #e77619;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: var(--gris);
+}
+
+.produit-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.produit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.13);
+}
+
+.produit-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background-color: #e9edf3;
+}
+
+.produit-card .card-body {
+    padding: 24px;
+}
+
+.produit-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.produit-card .card-text {
+    color: var(--gris);
+    font-size: 14px;
+    min-height: 80px;
+}
+
+.prix {
+    font-size: 20px;
+    font-weight: 800;
+    color: #e77619;
+    margin-bottom: 20px;
+}
+
+.btn-acheter {
+    background-color: var(--bleu);
+    color: white;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-acheter:hover {
+    background-color: var(--orange);
+    color: var(--bleu);
+}
+
+/* ===== SECTION À PROPOS ===== */
+
+.apropos-section {
+    background-color: white;
+}
+
+.apropos-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.apropos-section h2 {
+    font-size: 36px;
+    margin-bottom: 22px;
+}
+
+.apropos-section p {
+    color: var(--gris);
+    margin-bottom: 20px;
+}
+
+/* ===== SECTION CONTACT ===== */
+
+.contact-section {
+    background-color: #eaf0f9;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: var(--gris);
+    margin-bottom: 25px;
+}
+
+/* ===== PIED DE PAGE ===== */
+
+.footer {
+    background-color: var(--bleu);
+    color: white;
+    padding: 65px 0 20px;
+}
+
+.footer h3 {
+    font-size: 25px;
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+.footer h4 {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #cbd5e1;
+}
+
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: #cbd5e1;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--orange);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 23px;
+}
+
+.footer hr {
+    border-color: #52617b;
+    margin-top: 40px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE TABLETTE ===== */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        gap: 5px;
+        padding-top: 15px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 150px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        max-height: 350px;
+    }
+
+    .produit-card img {
+        height: 220px;
+    }
+
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+
+@media (max-width: 576px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+    .hero {
+        padding-top: 135px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        max-height: 260px;
+    }
+
+    .section-heading h2,
+    .apropos-section h2,
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .produit-card img {
+        height: 240px;
+    }
+
+    .produit-card .card-text {
+        min-height: auto;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+}
